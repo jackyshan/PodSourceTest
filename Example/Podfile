@@ -1,13 +1,14 @@
+source 'https://github.com/jackyshan/test-ios-specs'
+
 use_frameworks!
 
 platform :ios, '10.0'
 
 target 'PodSourceTest_Example' do
   pod 'PodSourceTest', :path => '../'
+  
+  
+  pod 'SnapKit', :source => 'https://cdn.cocoapods.org/'
+  pod 'libpag'
 
-  target 'PodSourceTest_Tests' do
-    inherit! :search_paths
-
-    
-  end
 end
